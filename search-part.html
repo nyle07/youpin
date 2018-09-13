@@ -1,0 +1,38 @@
+<style>
+    .search-group {
+        width: 35%;
+        margin: 0 auto;
+        padding: 30px 0 50px 0;
+        background: #fff;
+    }
+    .form-control{
+        height: 47px;
+    }
+    .btn-search{
+        padding: 9px 26px;
+        background: #F10215;
+        color: #fff;
+        font-size: 19px;
+    }
+    .btn-search:hover {
+        color: #fff;
+        background-color: #E83632;
+    }
+</style>
+<div class="logo" align="left" style="float: left;padding-left: 95px"><a href="index.html"><img src="images/logo.png" ></a></div>
+<div class="search-group">
+
+    <div class="input-group">
+
+        <input type="text" class="form-control" placeholder="请输入商品名称">
+        <span class="input-group-btn">
+        <button class="btn btn-search" id="search-part-btn" type="button">搜索</button>
+
+        </span>
+    </div>
+</div>
+<script>
+    $('#search-part-btn').focus(function(){
+        window.location.href="search.html";
+    })
+</script>
